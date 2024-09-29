@@ -1,27 +1,46 @@
+@import 'next-cloudinary/dist/cld-video-player.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  * {
+    border-color: theme(colors.border);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  *::selection {
+    background-color: theme(colors.muted.foreground);
+    color: theme(colors.background);
+  }
+
+  body {
+    background-color: theme(colors.background);
+    color: theme(colors.foreground);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer base {
+  /* Firefox */
+  * {
+    scrollbar-color: theme(colors.secondary.foreground)
+      theme(colors.secondary.DEFAULT);
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: theme(width[1.5]);
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: theme(colors.secondary.DEFAULT);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: theme(colors.secondary.foreground);
+    border-radius: theme(borderRadius.full);
+
+    &:hover {
+      background-color: theme(colors.secondary.DEFAULT);
+    }
   }
 }
