@@ -52,26 +52,26 @@ export function UserDetails({ transformX }) {
       </Row>
 
       <Row>
-        <div className='flex w-full flex-col gap-4 lg:flex-row'>
+        <div className='flex w-fit flex-col gap-4 lg:flex-row'>
           <div>
             <a href='mailto:info@ahmedsami.com'>
               <MagneticButton
                 variant='outline'
                 size='md'
-                className='w-full border-muted-foreground'
+                className='w-fit border-gray-700 whitespace-nowrap py-5 px-9 '
               >
                 info@ahmedsami.com
               </MagneticButton>
             </a>
           </div>
           <div>
-            <a href='tel:+31627847430'>
+            <a href='tel:+971544721157'>
               <MagneticButton
                 variant='outline'
                 size='md'
-                className='w-full border-muted-foreground'
+                className='w-full border-gray-700 py-5 px-9'
               >
-                +31 6 27 84 74 30
+                +971 54 472 1157
               </MagneticButton>
             </a>
           </div>

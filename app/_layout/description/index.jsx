@@ -9,23 +9,23 @@ import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
 import { Title, Wrapper } from './index.styled';
 
 const phrase =
-  'Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.';
+  'Building efficient and responsive web applications that bring ideas to life. My expertise in front-end development helps craft innovative solutions that push boundaries in the digital landscape.';
 
 export function Description() {
   return (
     <article className='container relative'>
       <Wrapper>
-        <div className='basis-full lg:basis-9/12'>
+        <div className='basis-full lg:basis-9/12 block'>
           <Title>
             <ParallaxReveal paragraph={phrase} />
           </Title>
         </div>
 
-        <div className='basis-7/12 lg:basis-3/12'>
+        <div className='basis-7/12 lg:basis-3/12 block'>
           <ParallaxFade>
             <Balancer as='p' className='mt-2 text-base lg:text-lg'>
-              The combination of my passion for design, code & interaction
-              positions me in a unique place in the web design world.
+            Driven by a focus on clean, high-performance code,
+            I deliver seamless user experiences that stand out in today's fast-paced tech environment.
             </Balancer>
           </ParallaxFade>
         </div>
