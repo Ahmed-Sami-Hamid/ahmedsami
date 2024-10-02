@@ -1,22 +1,25 @@
+import ImgOne from "../_assets/images/img1.jpg"
+import ImgTwo from "../_assets/images/img2.jpg"
+
 export const thumbnailOptions = [
   {
-    href: '/fabric',
+    href: '/',
     title: 'FABRIC™',
-    image: 'Dennis-Portfolio/images/hlz36eeb3ddfvqt9tex9',
+    image: ImgOne,
   },
   {
-    href: '/aanstekelijk',
+    href: '/',
     title: 'Aanstekelijk',
-    image: 'Dennis-Portfolio/images/aigt2q3xiqb8ovujzscc',
+    image: ImgTwo,
   },
   {
-    href: '/base-create',
+    href: '/',
     title: 'Base Create',
-    image: 'Dennis-Portfolio/images/ahuzarh793qmv9sdveyk',
+    image: ImgOne,
   },
   {
-    href: '/avvr',
+    href: '/',
     title: 'AVVR',
-    image: 'Dennis-Portfolio/images/pzychyr1ans60gqlevhg',
+    image: ImgTwo,
   },
 ];

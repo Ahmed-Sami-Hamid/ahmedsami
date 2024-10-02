@@ -8,6 +8,7 @@ import { CldImage } from 'next-cloudinary';
 import { Center } from '@/components';
 import { thumbnailOptions } from '@/data';
 import { randomId } from '@/utils';
+import Image from 'next/image';
 
 const MotionComponent = motion(Center);
 
@@ -21,7 +22,7 @@ export const ThumbnailModal = forwardRef(
       const id = randomId();
       return (
         <Center key={id} className='h-full w-full'>
-          <CldImage
+          <Image
             src={image}
             width={320}
             height={320}

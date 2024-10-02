@@ -5,7 +5,7 @@ import { Transition } from '@/layout';
 export const metadata = {
   title: 'Work',
   description:
-    'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Ahmed Sami',
+    'Helping brands thrive in the digital world. Located in The Dubai. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Ahmed Sami',
 };
 
 export default function Work() {

@@ -6,7 +6,7 @@
 //     default: 'Ahmed Sami • Freelance Designer & Developer',
 //   },
 //   description:
-//     'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
+//     'Helping brands thrive in the digital world. Located in The Dubai. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
 //   generator: 'Ahmed Sami',
 //   applicationName: 'Ahmed Sami',
 //   referrer: 'origin-when-cross-origin',
@@ -20,7 +20,7 @@
 //     card: 'summary_large_image',
 //     title: 'Ahmed Sami',
 //     description:
-//       'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
+//       'Helping brands thrive in the digital world. Located in The Dubai. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
 //     siteId: '1467726470533754880',
 //     creator: '@AliBagheri2079',
 //     creatorId: '1467726470533754880',

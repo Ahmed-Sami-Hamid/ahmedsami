@@ -42,7 +42,7 @@ export function Header() {
             <div>
               Located in Dubai
             </div>
-            <div className='w-[70px] h-[70px] bg-[#4e9cbc] border-0 rounded-full'>
+            <div className='w-[70px] h-[70px] bg-[#4e9cbc] border-0 rounded-full flex items-center justify-center'>
               <Earth/>
             </div>
           </div>

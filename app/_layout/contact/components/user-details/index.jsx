@@ -5,9 +5,13 @@ import { ArrowDownLeft } from 'lucide-react';
 import Link from 'next/link';
 import { CldImage } from 'next-cloudinary';
 
+// Images
+import SamiPic from './sami.jpeg'
+
 import { MagneticButton } from '@/components';
 
 import { Container, ImageWrapper, MainTitle, Row } from './index.styled';
+import Image from 'next/image';
 
 /**
  * @param {Object} props
@@ -19,8 +23,8 @@ export function UserDetails({ transformX }) {
       <Row>
         <div className='flex items-center gap-8'>
           <ImageWrapper>
-            <CldImage
-              src='AhmedSami-Portfolio/images/mqtwxh5znybowgaljrbp'
+            <Image
+              src={SamiPic}
               className='rounded-full object-cover'
               fill={true}
               alt='Ahmed Sami Profile Picture'

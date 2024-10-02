@@ -1,38 +1,49 @@
+// Images
+import ImageOne from "../_assets/images/home-item-1.jpg"
+import ImageTwo from "../_assets/images/home-item-3.jpg"
+import ImageThree from "../_assets/images/home-item-6.jpg"
+import ImageFour from "../_assets/images/home-item-8.jpg"
+// Videos
+import VideoOne from "../_assets/videos/home-item-2.mp4"
+import VideoTwo from "../_assets/videos/home-item-4.mp4"
+import VideoThree from "../_assets/videos/home-item-5.mp4"
+import VideoFour from "../_assets/videos/home-item-7.mp4"
+
 export const projectOptions = {
   first: [
     {
       type: 'image',
-      source: 'Dennis-Portfolio/images/rpmf9egswyd8563mxe9t',
+      source: ImageOne,
     },
     {
       type: 'video',
-      source: 'Dennis-Portfolio/videos/fldn3dntkusr22roeybr',
+      source: VideoOne,
     },
     {
       type: 'image',
-      source: 'Dennis-Portfolio/images/k7bp2wbfmalpjfk3yk5q',
+      source: ImageTwo,
     },
     {
       type: 'video',
-      source: 'Dennis-Portfolio/videos/x8w8sbohl5wkfuelmkhu',
+      source: VideoTwo,
     },
   ],
   second: [
     {
       type: 'image',
-      source: 'Dennis-Portfolio/images/r4kcbkvkl0djjt0mxmcw',
+      source: ImageThree,
     },
     {
       type: 'video',
-      source: 'Dennis-Portfolio/videos/q0yepc6dssbosmdk3isu',
+      source: VideoThree,
     },
     {
       type: 'image',
-      source: 'Dennis-Portfolio/images/ffoc9zsoeusptc7jcid5',
+      source: ImageFour,
     },
     {
       type: 'video',
-      source: 'Dennis-Portfolio/videos/usiswniv5qhgu2vamhnx',
+      source: VideoFour,
     },
   ],
 };

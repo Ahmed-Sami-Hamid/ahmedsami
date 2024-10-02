@@ -9,7 +9,7 @@ export function ThumbnailAction({ children }) {
       <Link href='/work' passHref>
         <MagneticButton
           variant='outline'
-          className='px-10 py-8 text-base before:-top-1/2 hover:text-background'
+          className='px-10 py-4 text-base before:-top-1/2 hover:text-background'
         >
           {children}
         </MagneticButton>

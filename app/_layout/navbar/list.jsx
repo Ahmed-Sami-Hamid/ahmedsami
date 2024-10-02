@@ -2,13 +2,15 @@
 
 import { Dot } from 'lucide-react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 import { Center, MagneticButton } from '@/components';
 import { navItems } from '@/data';
 import { randomId } from '@/utils';
 
 export function NavbarList() {
-  const items = navItems.slice(1).map(({ href, title }) => {
+  const pathname = usePathname(); 
+  const items = navItems.slice(pathname === '/' ? 1 : 0).map(({ href, title }) => {
     const id = randomId();
     return (
       <li key={id} className='group p-4'>
