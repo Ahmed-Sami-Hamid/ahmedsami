@@ -7,6 +7,6 @@ export const MagneticItem = styled.span`
   z-index: 1;
   display: block;
   width: max-content;
-  max-width: 14ch;
+  max-width: 500px;
   word-break: break-all;
 `;

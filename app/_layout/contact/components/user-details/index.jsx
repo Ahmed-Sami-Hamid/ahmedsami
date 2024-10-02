@@ -45,26 +45,26 @@ export function UserDetails({ transformX }) {
           <div className='h-[1px] bg-muted-foreground' />
           <div className='absolute right-0 top-0 z-20 -translate-x-1/2 -translate-y-1/2'>
             <motion.div style={{ x: transformX }}>
-              <Link href='/contact' passHref>
+            <a href='mailto:ahmedsamideveloper@gmail.com'>
                 <MagneticButton variant='primary' size='lg'>
                   Get in touch
                 </MagneticButton>
-              </Link>
+              </a>
             </motion.div>
           </div>
         </div>
       </Row>
 
       <Row>
-        <div className='flex w-fit flex-col gap-4 lg:flex-row'>
+        <div className='flex w-fit flex-col gap-6 lg:flex-row'>
           <div>
-            <a href='mailto:info@ahmedsami.com'>
+            <a href='mailto:ahmedsamideveloper@gmail.com'>
               <MagneticButton
                 variant='outline'
                 size='md'
-                className='w-fit border-gray-700 whitespace-nowrap py-5 px-9 '
+                className='w-full flex items-center justify-center border-gray-700 whitespace-nowrap py-8 px-10 '
               >
-                info@ahmedsami.com
+                ahmedsamideveloper@gmail.com
               </MagneticButton>
             </a>
           </div>
@@ -73,7 +73,7 @@ export function UserDetails({ transformX }) {
               <MagneticButton
                 variant='outline'
                 size='md'
-                className='w-full border-gray-700 py-5 px-9'
+                className='w-full border-gray-700 py-8 px-10'
               >
                 +971 54 472 1157
               </MagneticButton>
