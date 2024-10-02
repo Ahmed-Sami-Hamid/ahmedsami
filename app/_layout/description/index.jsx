@@ -25,7 +25,7 @@ export function Description() {
           <ParallaxFade>
             <Balancer as='p' className='mt-2 text-base lg:text-lg'>
             Driven by a focus on clean, high-performance code,
-            I deliver seamless user experiences that stand out in today's fast-paced tech environment.
+            I deliver seamless user experiences that stand out in todays fast-paced tech environment.
             </Balancer>
           </ParallaxFade>
         </div>
