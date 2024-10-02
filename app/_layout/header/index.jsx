@@ -13,7 +13,7 @@ import Image from 'next/image';
 export function Header() {
   return (
     <motion.header
-      className='relative h-screen overflow-hidden bg-[#4e9cbc] text-background'
+      className='relative h-screen overflow-hidden bg-[#289dc0] text-background'
       variants={slideUp}
       initial='initial'
       animate='enter'
@@ -42,7 +42,7 @@ export function Header() {
             <div>
               Located in Dubai
             </div>
-            <div className='w-[70px] h-[70px] bg-[#4e9cbc] border-0 rounded-full flex items-center justify-center'>
+            <div className='w-[70px] h-[70px] bg-[#289dc0] border-0 rounded-full flex items-center justify-center'>
               <Earth/>
             </div>
           </div>
