@@ -2,8 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { MoveDownRight } from 'lucide-react';
-import { CldImage } from 'next-cloudinary';
-import AhmedsamiImg from './sami.png';
+import AhmedsamiImg from '../../_assets/images/sami.png';
 
 import { Earth, ParallaxSlider } from '@/components';
 
@@ -26,7 +25,7 @@ export function Header() {
         alt='Ahmed Sami Personal Picture'
       />
 
-    <div className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'>
+      <div className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'>
         <div className='select-none'>
           <h1 className='text-[max(9em,15vw)]'>
             <ParallaxSlider repeat={4} baseVelocity={2}>
@@ -39,11 +38,9 @@ export function Header() {
         </div>
         <div className='flex justify-between items-center'>
           <div className='bg-[#1c1d20] w-[250px] h-[100px] border-0 rounded-r-full flex justify-between items-center pl-[20px] pr-[20px]'>
-            <div>
-              Located in Dubai
-            </div>
+            <div>Located in Dubai</div>
             <div className='w-[70px] h-[70px] bg-[#289dc0] border-0 rounded-full flex items-center justify-center'>
-              <Earth/>
+              <Earth />
             </div>
           </div>
           <div className='md:ml-auto'>
@@ -58,8 +55,8 @@ export function Header() {
               </h4>
             </div>
           </div>
+        </div>
       </div>
-    </div>
     </motion.header>
   );
 }

@@ -2,13 +2,12 @@
 
 import { motion } from 'framer-motion';
 import { ArrowDownLeft } from 'lucide-react';
-import Link from 'next/link';
-import { CldImage } from 'next-cloudinary';
 
 // Images
-import SamiPic from './sami.jpeg'
+import SamiPic from '../../../../_assets/images/sami2.png';
 
 import { MagneticButton } from '@/components';
+import { ThumbnailAction } from '@/app/_layout/thumbnail/components';
 
 import { Container, ImageWrapper, MainTitle, Row } from './index.styled';
 import Image from 'next/image';
@@ -45,7 +44,7 @@ export function UserDetails({ transformX }) {
           <div className='h-[1px] bg-muted-foreground' />
           <div className='absolute right-0 top-0 z-20 -translate-x-1/2 -translate-y-1/2'>
             <motion.div style={{ x: transformX }}>
-            <a href='mailto:ahmedsamideveloper@gmail.com'>
+              <a href='mailto:ahmedsamideveloper@gmail.com'>
                 <MagneticButton variant='primary' size='lg'>
                   Get in touch
                 </MagneticButton>
@@ -59,24 +58,12 @@ export function UserDetails({ transformX }) {
         <div className='flex w-fit flex-col gap-6 lg:flex-row'>
           <div>
             <a href='mailto:ahmedsamideveloper@gmail.com'>
-              <MagneticButton
-                variant='outline'
-                size='md'
-                className='w-full flex items-center justify-center border-gray-700 whitespace-nowrap py-8 px-10 '
-              >
-                ahmedsamideveloper@gmail.com
-              </MagneticButton>
+              <ThumbnailAction>ahmedsamideveloper@gmail.com</ThumbnailAction>
             </a>
           </div>
           <div>
             <a href='tel:+971544721157'>
-              <MagneticButton
-                variant='outline'
-                size='md'
-                className='w-full border-gray-700 py-8 px-10'
-              >
-                +971 54 472 1157
-              </MagneticButton>
+              <ThumbnailAction>+971 54 472 1157</ThumbnailAction>
             </a>
           </div>
         </div>
