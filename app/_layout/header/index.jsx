@@ -3,13 +3,16 @@
 import { motion } from 'framer-motion';
 import { MoveDownRight } from 'lucide-react';
 import AhmedsamiImg from '../../_assets/images/sami.png';
+import AhmedFullImage from '../../_assets/images/samifull.png';
 
 import { Earth, ParallaxSlider } from '@/components';
 
 import { slideUp } from './variants';
 import Image from 'next/image';
+import useWindowSize from '@/app/_hooks/use-window-size';
 
 export function Header() {
+  const { width } = useWindowSize();
   return (
     <motion.header
       className='relative h-screen overflow-hidden bg-[#289dc0] text-background'
@@ -18,7 +21,7 @@ export function Header() {
       animate='enter'
     >
       <Image
-        src={AhmedsamiImg}
+        src={width > 480 ? AhmedsamiImg : AhmedFullImage}
         className='object-cover md:scale-5 md:object-contain'
         fill={true}
         sizes='100vw'
@@ -36,8 +39,8 @@ export function Header() {
             </ParallaxSlider>
           </h1>
         </div>
-        <div className='flex justify-between items-center'>
-          <div className='bg-[#1c1d20] w-[250px] h-[100px] border-0 rounded-r-full flex justify-between items-center pl-[20px] pr-[20px]'>
+        <div className='flex justify-between items-center '>
+          <div className='md:flex hidden bg-[#1c1d20] w-[250px] h-[100px] border-0 rounded-r-full justify-between items-center pl-[20px] pr-[20px]'>
             <div>Located in Dubai</div>
             <div className='w-[70px] h-[70px] bg-[#289dc0] border-0 rounded-full flex items-center justify-center'>
               <Earth />
@@ -51,7 +54,9 @@ export function Header() {
 
               <h4 className='text-[clamp(1.55em,2.5vw,2.75em)]'>
                 <span className='block'>Senior</span>
-                <span className='block'>Frontend Engineer</span>
+                <span className='flex items-center justify-center gap-5'>
+                  Frontend Engineer {width < 767 && width > 336 && <Earth />}
+                </span>
               </h4>
             </div>
           </div>

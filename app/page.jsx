@@ -7,7 +7,6 @@ import {
   Thumbnail,
   Transition,
 } from '@/layout';
-import Head from 'next/head';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -18,10 +17,6 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
-     <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
     <Transition>
       <Navbar />
       <Header />
@@ -32,6 +27,5 @@ export default function Home() {
       </main>
       <Contact />
     </Transition>
-    </>
   );
 }

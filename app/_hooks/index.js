@@ -7,3 +7,4 @@ export * from './use-offcanvas-toggle';
 export * from './use-parallax-slider';
 export * from './use-project-slider';
 export * from './use-time-out';
+export * from './use-window-size';
