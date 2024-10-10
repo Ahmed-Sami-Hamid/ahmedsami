@@ -11,9 +11,8 @@ export const metadata = {
 export default function About() {
   return (
     <Transition>
-       <Navbar />
-      <Header />
-      {/* <InProgress>About Page</InProgress> */}
+      <Navbar />
+      <InProgress>About Page</InProgress>
     </Transition>
   );
 }

@@ -11,8 +11,8 @@ export const metadata = {
 export default function Contact() {
   return (
     <Transition>
-       <Navbar />
-      <Header />
+      <Navbar />
+      <InProgress>Contact Page</InProgress>
     </Transition>
   );
 }
